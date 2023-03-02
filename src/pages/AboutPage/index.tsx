@@ -26,9 +26,9 @@ const About = () => {
           </p>
           <div className="flex justify-center">
             <span className="inline-flex">
-              <a className="text-gray-500">
+              <span className="text-gray-500">
                 <FaUser className="w-6 h-6" />
-              </a>
+              </span>
               <h2 className="text-gray-900 font-medium title-font px-2">
                 Mwero Abdalla, CEO
               </h2>
