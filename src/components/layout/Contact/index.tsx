@@ -1,29 +1,8 @@
 import React from 'react';
 import { FaEnvelope, FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
-import * as Yup from 'yup';
 import { ContactForm } from '../../modules';
 
 const Contact: React.FC = () => {
-    const initialValues = {
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-    };
-
-    const validationSchema = Yup.object().shape({
-        name: Yup.string().required('Name is required'),
-        email: Yup.string().email('Invalid email').required('Email is required'),
-        phone: Yup.string().required('Phone number is required'),
-        message: Yup.string().required('Message is required'),
-    });
-
-    const handleSubmit = (values: any, { setSubmitting }: any) => {
-        setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-        }, 400);
-    };
 
     return (
         <section className="text-gray-700 body-font relative">
